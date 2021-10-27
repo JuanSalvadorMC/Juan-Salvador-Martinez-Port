@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  padding: 16px;
+  padding: 16px  0px;
   background-color: #725a1f1f;
 }
 @font-face {
@@ -14,6 +14,7 @@ body {
 
 * {
   font-family: "roboto";
+  box-sizing: border-box;
 }
 .selecti{
   font-weight: bold;
@@ -27,19 +28,25 @@ body {
 
 .cont-principal {
     color: #1f1f1f;
-    background-color: #fdfdfd;
+    /* background-color: #fdfdfd00; */
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-  
+    /* background: linear-gradient(
+        0deg, rgb(84 84 84) 58%, rgba(255,255,255,0) 64%); */
+       /*  background: linear-gradient(
+        0deg, rgb(231 231 231) 54%, rgb(0 0 0 / 0%) 64%); */
 }
 .col1 {
+    margin-left: 1%;
     color: black;
-    width: calc(34% );
+    width: calc(33% );
     background-color: #d6d6d6;
+    border: 2px solid #00bfad;
 }
 .col2 {
-  width: calc(66% );
+    margin-right: 15;
+  width: calc(65% );
  /*  background-color: #f5f5b6; */
 }
 .head-perfil {
@@ -56,6 +63,10 @@ body {
     min-height: 46vh;
     display: flex;
     align-items: center;
+    /* background-image: url("assets/gifs/inicio/simetric.gif"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity:0.2  !important; */
 }
 a{
   color: rgb(255, 255, 255);
@@ -66,7 +77,7 @@ html{
 }
 
 .cont-head{
-    background-color: #20b8b8;
+    background-color: #ededed;
     min-height: 54vh;
     box-shadow: inset 0px 0px 12px #0000003d;
 }
@@ -95,6 +106,7 @@ html{
     overflow: hidden;
     opacity: 0;
     z-index: 1;
+    transition:  3000ms;
 }
 .pestanas-all {
     transition: 500ms;
@@ -105,7 +117,7 @@ html{
     list-style: none;
     padding: 0%;
     margin: 0px;
-    height: 8vh;
+    height: 7vh;
     display: flex;
     align-items: center;
 }
@@ -184,6 +196,7 @@ pre{
 
 .cont-portf{
     padding: 8rem 6% 73px 6%;
+    overflow: visible !important;
 }
 .tarjetasM {
     background-color: #e9e3e3;
@@ -571,5 +584,163 @@ body{
     height: 14px !important;
     border-radius: 100%;
     background-color: #153d3d!important;
+
+}
+.img-card{
+    width: 400px;
+}
+.cont-img2{
+
+}
+.text-project p {
+    font-size: 15px;
+}
+
+.cont-proyecto {
+    margin: 4rem 0;
+    background-color: #f9f9f9;
+    padding: 16px 0;
+    border: 1px solid #afafafbd;
+    border-radius: 3px;
+}
+.cont-proyecto:hover {
+    /* background-color: #dadada; */
+    border: 1px solid #868686;
+    cursor: pointer;
+}
+.portafolio{
+    position: sticky;
+    top: 0px;
+    background-color: #00bfac00;
+    height: 1px;
+    margin-bottom: 80px;
+
+}
+.effect{
+    transition:  3000ms;
+    position: fixed;
+    left: 0;
+    border-radius: 0px 0px 100px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.nave-cont{
+    position: fixed;
+   /*  transform: rotate(178deg); */
+    width: 10rem;
+    right: 5rem;
+    top: -15rem;
+    z-index: -1; 
+    transition: 2000ms;
+}
+
+.nave-cont-down{
+    transition: 2000ms;
+    top: 40% !important;
+}
+.nave-cont-visible{
+    transition: 2000ms;
+    top: 20% !important;
+}
+.nave-up{ 
+    /* margin-top: 10vh; */
+    transition: 100ms;
+    transform: rotate(-1deg);
+}
+.nave-down{
+    transition: 100ms;
+    margin-top: 50;
+    transform: rotate(178deg);
+}
+
+#nave{
+    width: 10rem;
+}
+
+.cont-fondo{
+    width: calc(65% );
+    position: absolute;
+    z-index: -3;
+    display: flex;
+    justify-content: center;
+}
+.fondo-inicio{
+    z-index: -2;
+    opacity: 0.1;
+    height: auto;
+    width: inherit;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+
+	.col1 {
+        width: calc(100% );
+    }
+    .col2 {
+        width: calc(100% );
+    }
+    .cont-fondo{
+        width: 100%;
+    }
+
+    .acercade{
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 4rem;
+    }
+    ul{
+        font-size: 14px;
+    }
+    li{
+        margin-bottom: 6px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .cont-head{
+        height: auto;
+    }
+    .skills {
+        padding: 4rem 5% 0  5%;
+    }
+    .pad4 {
+        padding: 4rem 6% 0  6%;
+    }
+    .pad {
+        padding: 1rem 5%;
+    }
+    .pestanas{
+        padding: 0 2% ;
+        border-radius: 0px;
+        position: fixed;
+    }
+    .textM p {
+        font-size: 14px;
+    }
+    .tarjetasM {
+        height: auto;
+        margin: 8px 0;
+    }
+    .pestanas ul li {
+        font-size: 13px;
+        margin: 0px 4px;
+       
+    }
+    .cont-portf {
+        padding: 4rem 6% 40px 6%;
+    }
+    body{
+        padding: 0;
+    }
 
 }

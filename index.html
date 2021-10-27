@@ -65,6 +65,16 @@
             </div>
         </section>
         <section class="col2 " id="about">
+            <div id="nave-cont"  class="nave-cont">
+             <img  id="nave" src="assets/gifs/naves/nave3.gif" alt="">   
+            </div>
+            
+           <!--  <div class="cont-fondo">
+                <img class="fondo-inicio" src="assets/gifs/inicio/simetric.gif" alt="">
+            </div>
+             -->
+            
+
             <div class="pestanas " id="navbrand">
                 <ul>
                     <li><a id="xabout" class="selecti" href="#about"> About</a>   </li>
@@ -74,9 +84,12 @@
                     <li><a id="xcont" href="#main"> Contact</a></li> 
                 </ul>
             </div>
+            <div class="portafolio"></div>
 
             <div id="cont-navegacion" class="cont-navegacion animate__animated animate__fadeIn" >
-                
+                <div class="cont-fondo">
+                    <img class="fondo-inicio" src="assets/gifs/inicio/simetric.gif" alt="">
+                </div>
                 <!--  -->
                 <div class="acercade pad" >
                     <p> <b>¡Hola!</b>
@@ -147,69 +160,112 @@
                 <p>-Integración de backend</p>
                 <p>-Manejo, análisis y creación de BD´s MySQL</p>
             </div>
+            
         </section>
-        <section id="portf" class="cont-portf">
-            <h2>Portafolio</h2>
-            <div class="container mt-5 mb-5 center">
-                <div class="row">
-                    <div class="col-md-4  align-items-center ">
-                        <div class="tarjetasM hero__ctar"> 
-                            <div class="cont-img">
-                                <img src="./assets/portafolio/kekuul/fund.png" class="imgM img-fluid" alt="">
-                            </div>
-                            <div class="textM">
-                                <h4>kekuul</h4>
-                                <p >Un lugar donde podrán encontrar recursos para sus proyectos, ya sea fondeando un proyecto especial o bien prestando o contratando algún servicio freelance
-                                </p> 
-                            </div> 
-                        </div> 
-                        
+        
+        <section id="portf" class="cont-portf container">
+            
+            <h2 >PORTAFOLIO</h2>
+            <div>
+                
+                <div  class="cont-proyecto center container slideWalmart">
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/Walmart/Captura.PNG" alt="./assets/portafolio/Walmart/Captura.PNG">
                     </div>
-                    <div class="col-md-4  align-items-center"> 
-                        <div class="tarjetasM slideWalmart"> 
-                            <div class="cont-img">
-                            <img src="./assets/portafolio/Walmart/Captura.PNG" class="imgM img-fluid" alt="">
-                        </div>
-                            
-                            <div class="textM">
-                                <h4>Walmart</h4>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat non officia eligendi,
-                                    dignissimos impedit voluptatibus maxime quibusdam commodi atque aperiam unde error magni
-                                    officiis dicta quas delectus blanditiis inventore eum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4  align-items-center"> 
-                        <div class="tarjetasM slideIesWeb"> 
-                            <div class="cont-img">
-                            <img src="./assets/portafolio/IesWeb/Captura.PNG" class="imgM img-fluid" alt="">
-                        </div>
-                           
-                            <div class="textM">
-                                <h4>Ies Web</h4>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat non officia eligendi,
-                                    dignissimos impedit voluptatibus maxime quibusdam commodi atque aperiam unde error magni
-                                    officiis dicta quas delectus blanditiis inventore eum.
-                                </p><!--  <button class="btn btn-primary ">Agendar</button> -->
-                            </div>
-                        </div>
+                    <div class="text-project mx-4 ">
+                        <h4>Sistema de tramites WALMART México</h4>
+                        <p>Un sistema de tramites interno para walmart, mis tareas principales en este proyecto fue la creación formularios, validar campos, la creación de distintos tipos de componentes, trabajé mucho con inputs, botones, combobox, checks, calendarios, paginators, modales. De una forma modular de trabajo para poder reciclar y compartir componentes entre vistas.
+                        </p><br>
+                        <p>Tecnologías:</p>
+                        <br>
+                        <p><b>Angular | SCSS | Html | JavaScript | TypeScript | Servicios rest </b>   </p>
                     </div>
                 </div>
+                <div  class="cont-proyecto center container slidenissan">
+                    <div class="text-project mx-4  text-end justify-content-end">
+                        <h4>App Nissan</h4>
+                        <p>AppMovil para consultar el estado de delivery de mercancía. Se me
+                            encomendó crear la estructura del proyecto y la maquetación de todas las
+                            vistas, un diseño responsivo para tabletas, ipad y celulares. Se trabajó con
+                            AngularMaterial y algunas librerías externas para la generación de los
+                            steppers de seguimiento.
+                        </p><br><br><br><br>
+                        <p>Tecnologías:</p><br>
+                        <p><b>Ionic |AngMaterial | SCSS | Html | JavaScript | TypeScript </b>  </p> 
+                    </div>
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/Nissan/portada1.JPG" alt="./assets/portafolio/Walmart/Captura.PNG">
+                    </div>
+                </div>
+                <div  class="cont-proyecto center container hero__ctar">
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/kekuul/fund.png" alt="./assets/portafolio/Walmart/Captura.PNG">
+                    </div>
+                    <div class="text-project mx-4 ">
+                        <h4>Crowdfunding Kekuul.com  </h4>
+                        <p>Realice la maquetación completa para un sitio web de crowdfunding de la
+                            mano de un diseñador, en total se realizaron más de 15 vistas el proyecto
+                            fue creado con Laravel de PHP. Trabaje con php para la conexión de las
+                            vistas con la base de datos. Trabaje de la mano con el líder de proyecto
+                            para la el análisis y creación del BD requerida para el proyecto. </p><p></p> El proyecto actualmente ha sufrido cambios de terceros, pero se puede
+                            acceder atreves la dirección: </p>
+                            <p>www.kekuul.com/home </p>
+                            <br>
+                        <p>Tecnologías:</p>
+                        <br>
+                        <p><b>PHP | Laravel | CSS | Html | JavaScript | JQuery | MySQL  </b>   </p>
+                    </div>
+                </div>
+                <div  class="cont-proyecto center container slideIesWeb">
+                    <div class="text-project mx-4  text-end justify-content-end">
+                        <h4>Salva Un Negocio</h4>
+                        <p>Un proyecto crowdfunding para la asociación, compra venta y remate, de
+                        pequeños- medianos negocios</p>
+                        <p>Maquetación, validación de formularios, consumo de Apis, crud a bd por
+                        medio de servicios rest, validación de usuarios y manejo de sesiones.</p>
+                        <p>https://salvaunnegocio.com.mx/</p>
+                        <p>Tecnologías:</p><br>
+                        <p><b>Angular | AngMaterial | SCSS | Html | Typecript | ServiciosRest  </b>  </p> 
+                    </div>
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/SUN/sun.6png.png" alt="./assets/portafolio/Walmart/Captura.PNG">
+                    </div>
+                </div>
+                <div  class="cont-proyecto center container slideWbr">
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/WBR-Palacio/wbr5.jpeg" alt="./assets/portafolio/Walmart/Captura.PNG">
+                    </div>
+                    <div class="text-project mx-4 ">
+                        <h4>Tablero de Inventario Palacio de Hierro</h4>
+                        <p>Se realizó un sistema de versiones de inventario con tablero dinámico
+                        para visualizar y predecir stock de producto, pérdidas y ganancias por
+                        semana. Se trabajó la estructura del proyecto, maquetación, lógica y
+                        funcionalidad, consumo de Apis rest, crud con servicios rest, validación de
+                        usuarios, creación de archivos excel.</p><br>
+                        <p>Tecnologías:</p>
+                        <br>
+                        <p><b>Angular | SCSS | Html | JavaScript | TypeScript | Servicios rest </b>   </p>
+                    </div>
+                </div>
+                <div  class="cont-proyecto center container slideAppHp">
+                    <div class="text-project mx-4  text-end justify-content-end">
+                        <h4>App Palacio de Hierro</h4>
+                        <p>AppMovil para consultar de promociones, pedidos y stock de mercancía
+                        por sucursales. Realice la estructura del proyecto y la maquetación de
+                        todas las vistas, un diseño responsivo para ordenador, ipad y iPhone. </p><br>
+                        <p>Tecnologías:</p><br>
+                        <p><b>Ionic |AngMaterial | SCSS | Html | JavaScript | TypeScript</b>  </p> 
+                    </div>
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/palacioH/Captura.JPG" alt="./assets/portafolio/Walmart/Captura.PNG">
+                    </div>
+                </div>
+                
             </div>
-            <!-- <a href="#" class="hero__cta">Join us!</a> -->
             <div class="modal ">
                 <div class="modal__container">
-                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="9000" data-bs-wrap="false">
-                        <!-- <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        </div> -->
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
+                      
                         <div class="carousel-inner">
                             <div  id="carousel-item-div-1" class="carousel-item active">
                                 <div class="center">
@@ -273,5 +329,33 @@
             }
         });
     </script>
+    <script>
+        $(window).bind('mousewheel', function(event) {
+
+           
+
+            if (event.originalEvent.wheelDelta >= 0) {
+                /* console.log('Scroll up'); */
+                $("#nave").addClass("nave-up");
+                $("#nave").removeClass("nave-down");
+
+                $("#nave-cont").addClass("nave-cont-down");
+                $("#nave-cont").removeClass("nave-cont-visible");
+            }
+            else {
+                /* console.log('Scroll down'); */
+                $("#nave").addClass("nave-down");
+                $("#nave").removeClass("nave-up");
+
+                $("#nave-cont").removeClass("nave-cont-down");
+                $("#nave-cont").addClass("nave-cont-visible");
+            }
+        });
+    </script>
 </body>
-</html>
+</html><!-- 
+<img src="./assets/portafolio/palacioH/hp1.png" alt="">
+<img src="./assets/portafolio/palacioH/hp2.png" alt="">
+<img src="./assets/portafolio/palacioH/hp3.png" alt="">
+<img src="./assets/portafolio/palacioH/hp4.jpeg" alt="">
+<img src="./assets/portafolio/palacioH/hp5.png" alt=""> -->

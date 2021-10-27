@@ -4,7 +4,7 @@
     behavior: 'smooth'
   });
  */
-
+console.log('Desarrollado por Juan Salvador martinez Cervantes, Contact:5566232855 🔥');
   navbrand=document.getElementById('navbrand');
   navbrand.classList.add('pestanas-all');
  navbrand.setAttribute("style", "transition: 3s;width: 100%;");
@@ -54,6 +54,10 @@ const divItem5 = document.getElementById('carousel-item-div-5');
 const openKekuul = document.querySelector('.hero__ctar');
 const openWalmart = document.querySelector('.slideWalmart');
 const openIesWeb = document.querySelector('.slideIesWeb');
+const openNissan = document.querySelector('.slidenissan');
+const openWbr = document.querySelector('.slideWbr');
+const openAppHp = document.querySelector('.slideAppHp');
+
 const modal = document.querySelector('.modal');
 let click=false;
 
@@ -104,11 +108,68 @@ openIesWeb.addEventListener('click', (e)=>{
     divItem5.classList.remove('active');
     e.preventDefault();
     modal.classList.add('modal--show');
-    document.getElementById('carrusel1').src='./assets/portafolio/IesWeb/Capt.jpeg';
-    document.getElementById('carrusel2').src='./assets/portafolio/IesWeb/Capturahost.jpeg';
-    document.getElementById('carrusel3').src='./assets/portafolio/IesWeb/8_localhost.jpeg';
-    document.getElementById('carrusel4').src='./assets/portafolio/IesWeb/Captura_localhost.jpeg';
-    document.getElementById('carrusel5').src='./assets/portafolio/IesWeb/Captura.PNG';
+    document.getElementById('carrusel1').src='./assets/portafolio/SUN/sun1.png';
+    document.getElementById('carrusel2').src='./assets/portafolio/SUN/sun2442.png';
+    document.getElementById('carrusel3').src='./assets/portafolio/SUN/sun24.png';
+    document.getElementById('carrusel4').src='./assets/portafolio/SUN/sun322.png';
+    document.getElementById('carrusel5').src='./assets/portafolio/SUN/Captura35_localhost.jpeg';
+    setTimeout(() => {
+        click=false;
+        console.log('false');
+    }, 500);
+    desaparecerIconos();  
+});
+openNissan.addEventListener('click', (e)=>{
+    divItem1.classList.add('active');
+    divItem2.classList.remove('active');
+    divItem3.classList.remove('active');
+    divItem4.classList.remove('active');
+    divItem5.classList.remove('active');
+    e.preventDefault();
+    modal.classList.add('modal--show');
+    document.getElementById('carrusel1').src='./assets/portafolio/Nissan/nissan1.png';
+    document.getElementById('carrusel2').src='./assets/portafolio/Nissan/nissan2.jpeg';
+    document.getElementById('carrusel3').src='./assets/portafolio/Nissan/nissan3.jpeg';
+    document.getElementById('carrusel4').src='./assets/portafolio/Nissan/nissan4.png';
+    document.getElementById('carrusel5').src='./assets/portafolio/Nissan/nissan5.jpeg';
+    setTimeout(() => {
+        click=false;
+        console.log('false');
+    }, 500);
+    desaparecerIconos();  
+});
+openWbr.addEventListener('click', (e)=>{
+    divItem1.classList.add('active');
+    divItem2.classList.remove('active');
+    divItem3.classList.remove('active');
+    divItem4.classList.remove('active');
+    divItem5.classList.remove('active');
+    e.preventDefault();
+    modal.classList.add('modal--show');
+    document.getElementById('carrusel1').src='./assets/portafolio/WBR-Palacio/wbr1.JPG';
+    document.getElementById('carrusel2').src='./assets/portafolio/WBR-Palacio/wbr2.jpeg';
+    document.getElementById('carrusel3').src='./assets/portafolio/WBR-Palacio/wbr3.jpeg';
+    document.getElementById('carrusel4').src='./assets/portafolio/WBR-Palacio/wbr4.jpeg';
+    document.getElementById('carrusel5').src='./assets/portafolio/WBR-Palacio/wbr5.jpeg';
+    setTimeout(() => {
+        click=false;
+        console.log('false');
+    }, 500);
+    desaparecerIconos();  
+});
+openAppHp.addEventListener('click', (e)=>{
+    divItem1.classList.add('active');
+    divItem2.classList.remove('active');
+    divItem3.classList.remove('active');
+    divItem4.classList.remove('active');
+    divItem5.classList.remove('active');
+    e.preventDefault();
+    modal.classList.add('modal--show');
+    document.getElementById('carrusel1').src='./assets/portafolio/palacioH/hp1.png';
+    document.getElementById('carrusel2').src='./assets/portafolio/palacioH/hp2.png';
+    document.getElementById('carrusel3').src='./assets/portafolio/palacioH/hp3.png';
+    document.getElementById('carrusel4').src='./assets/portafolio/palacioH/hp4.jpeg';
+    document.getElementById('carrusel5').src='./assets/portafolio/palacioH/hp5.png';
     setTimeout(() => {
         click=false;
         console.log('false');
@@ -168,7 +229,35 @@ next.addEventListener('click', (e)=>{
     desaparecerIconos();       
 });
 
-/*  */
+/* NAVBAR */
+var nave=document.getElementById('nave-cont');
+
+var navbar=document.querySelector('.pestanas');
+
+var imagen = document.querySelector(".portafolio");
+var visible = false;
+window.onscroll = function () {
+    var posTopView = window.scrollY;
+    var posButView = posTopView + window.innerHeight;
+    var elemTop = imagen.offsetTop;
+    var elemBottom = elemTop + imagen.offsetHeight;
+    if ((elemBottom < posButView && elemBottom > posTopView) ||(elemTop > posTopView && elemTop < posButView)) {
+        if(visible === false){
+            /* console.log("Si es visible"); */
+            navbar.classList.remove('effect');
+            nave.style.zIndex=-1;
+        }
+        visible=true;
+    } else {
+        if (visible === true){
+            /* console.log("No es visible"); */
+            navbar.classList.add('effect');
+            nave.style.zIndex=0;
+            
+        }
+        visible=false;
+    }
+};
 
   
 
