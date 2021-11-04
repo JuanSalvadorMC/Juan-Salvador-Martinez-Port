@@ -72,8 +72,8 @@ openKekuul.addEventListener('click', (e)=>{
     divItem5.classList.remove('active');
     e.preventDefault();
     modal.classList.add('modal--show');
-    document.getElementById('carrusel1').src='./assets/portafolio/kekuul/agencia2.png';
-    document.getElementById('carrusel2').src='./assets/portafolio/kekuul/fund.png';
+    document.getElementById('carrusel2').src='./assets/portafolio/kekuul/agencia2.png';
+    document.getElementById('carrusel1').src='./assets/portafolio/kekuul/fund.png';
     document.getElementById('carrusel3').src='./assets/portafolio/kekuul/agencia4.png';
     document.getElementById('carrusel4').src='./assets/portafolio/kekuul/CapturaAgencia.png';
     document.getElementById('carrusel5').src='./assets/portafolio/kekuul/www.kekuul.com.jpeg';
@@ -204,21 +204,21 @@ function desaparecerIconos(){
     if(divItem1.classList.contains('active') || divItem1.classList.contains('carousel-item-end')){
         prev.style.opacity=0;
     }else{
-        prev.style.opacity=0.5;
+        prev.style.opacity=0.9;
     }
     if (divItem1.classList.contains('active') && divItem1.classList.contains('carousel-item-start')){
         console.log('entro');
-        prev.style.opacity=0.5;
+        prev.style.opacity=0.9;
     }
     console.log('next',divItem5.className);
     if(divItem5.classList.contains('active') || divItem5.classList.contains('carousel-item-start')){
         next.style.opacity=0;
     }else{
-        next.style.opacity=0.5;
+        next.style.opacity=0.9;
     }
     if(divItem5.classList.contains('active') && divItem5.classList.contains('carousel-item-end')){
         console.log('entro');
-        next.style.opacity=0.5;
+        next.style.opacity=0.9;
     }
 }
 
