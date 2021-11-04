@@ -94,6 +94,7 @@ html{
     margin: 2rem 5%;
     padding: 16px 4% 0 6%;
     background-color: #d6d6d6;
+    overflow-y: auto;
 }
 .pestanas {
     padding: 0% 10%;
@@ -794,10 +795,13 @@ body{
 
 }
 
-@media screen and (orientation: landscape){
+@media screen and (orientation: landscape) and (max-height: 500px) {
 
     .img-slide {
-        height: 65vh !important;
+        height: 62vh !important;
+    }
+    .pestanas ul{
+        height: 13vh;
     }
 }
 

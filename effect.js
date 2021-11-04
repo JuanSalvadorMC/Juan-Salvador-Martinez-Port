@@ -115,7 +115,7 @@ openIesWeb.addEventListener('click', (e)=>{
     document.getElementById('carrusel5').src='./assets/portafolio/SUN/Captura35_localhost.jpeg';
     setTimeout(() => {
         click=false;
-        console.log('false');
+        /* console.log('false'); */
     }, 500);
     desaparecerIconos();  
 });
@@ -134,7 +134,6 @@ openNissan.addEventListener('click', (e)=>{
     document.getElementById('carrusel5').src='./assets/portafolio/Nissan/nissan5.jpeg';
     setTimeout(() => {
         click=false;
-        console.log('false');
     }, 500);
     desaparecerIconos();  
 });
@@ -153,7 +152,6 @@ openWbr.addEventListener('click', (e)=>{
     document.getElementById('carrusel5').src='./assets/portafolio/WBR-Palacio/wbr5.jpeg';
     setTimeout(() => {
         click=false;
-        console.log('false');
     }, 500);
     desaparecerIconos();  
 });
@@ -172,7 +170,6 @@ openAppHp.addEventListener('click', (e)=>{
     document.getElementById('carrusel5').src='./assets/portafolio/palacioH/hp5.png';
     setTimeout(() => {
         click=false;
-        console.log('false');
     }, 500);
     desaparecerIconos();  
 });
@@ -200,24 +197,24 @@ modalContainer.addEventListener('click', (e)=>{
 });
 
 function desaparecerIconos(){
-    console.log('prev',divItem1.className);
+    
     if(divItem1.classList.contains('active') || divItem1.classList.contains('carousel-item-end')){
         prev.style.opacity=0;
     }else{
         prev.style.opacity=0.9;
     }
     if (divItem1.classList.contains('active') && divItem1.classList.contains('carousel-item-start')){
-        console.log('entro');
+       
         prev.style.opacity=0.9;
     }
-    console.log('next',divItem5.className);
+   
     if(divItem5.classList.contains('active') || divItem5.classList.contains('carousel-item-start')){
         next.style.opacity=0;
     }else{
         next.style.opacity=0.9;
     }
     if(divItem5.classList.contains('active') && divItem5.classList.contains('carousel-item-end')){
-        console.log('entro');
+        
         next.style.opacity=0.9;
     }
 }
