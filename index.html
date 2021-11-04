@@ -326,7 +326,7 @@
             caret:'<span class="cursor" ">_</span>',
             typing:function(elm,chr){
                 if (chr.match(/\-trigger/)) 
-                $('#pow-txt').show().delay(1900).fadeOut(0);
+                $('#pow-txt').show().delay(7900).fadeOut(0);
             }
         });
     </script>
@@ -351,6 +351,31 @@
                 $("#nave-cont").removeClass("nave-cont-down");
                 $("#nave-cont").addClass("nave-cont-visible");
             }
+        });
+       /* CROLL TOP */
+        $(function () {
+             var $win = $(window);
+ 
+             $win.scroll(function () {
+                 if ($win.scrollTop() == 0){
+                     
+            navbar.classList.remove('bar-movil');
+                   
+                     /* console.log('Scrolled to Page Top'); */
+
+                 } else if ($win.scrollTop() != 0 && $win.height() + $win.scrollTop()
+                                != $(document).height() ) {
+                                    
+                                    navbar.classList.add('bar-movil');
+                     console.log('Scrolled medium');
+                 
+                 } else if ($win.height() + $win.scrollTop()
+                                == $(document).height()) {
+                                    
+           
+                    /*  console.log('Scrolled to Page Bottom'); */
+                 }
+             });
         });
     </script>
 </body>

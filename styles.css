@@ -682,6 +682,9 @@ body{
     text-align: right;
 }
 
+.bar-movil{
+    
+}
 
 
 
@@ -716,7 +719,7 @@ body{
 	.col1 {transition: 4000ms;
         margin: 0;
         width: calc(100% );
-        margin-top: 7.1vh !important;
+        /* margin-top: 7.1vh !important; */
     }
     .col2 {
         width: calc(100% );
@@ -755,8 +758,8 @@ body{
         padding: 1rem 5%;
     }
     .pestanas{
-        padding: 0 2% ;
-        border-radius: 0px;
+        padding: 0 3% ;
+        border-radius: 0px 0px 20px 20px;
         position: fixed;
     }
     .textM p {
@@ -781,6 +784,10 @@ body{
 }
 
 @media screen and (max-width: 500px) {
+    .bar-movil{
+        border-radius: 100px !important;
+        top: 10px !important;
+    }
     .img-slide {
         height: 60vh;
     }
