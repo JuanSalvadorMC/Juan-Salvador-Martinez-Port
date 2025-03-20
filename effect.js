@@ -7,7 +7,7 @@
 console.log('Desarrollado por Juan Salvador martinez Cervantes, Contact:5566232855 🔥');
   navbrand=document.getElementById('navbrand');
   navbrand.classList.add('pestanas-all');
- navbrand.setAttribute("style", "transition: 3s;width: 100%;");
+ navbrand.setAttribute("style", "transition: 2s;width: 100%;");
 
   var nav= [];
   
@@ -62,6 +62,7 @@ const modal = document.querySelector('.modal');
 let click=false;
 
 const closeModal = document.querySelector('.modal__close');
+const closeModalV2 = document.querySelector('.modal__close_v2');
 const modalContainer = document.querySelector('.modal__container');
 
 openKekuul.addEventListener('click', (e)=>{
@@ -182,6 +183,13 @@ closeModal.addEventListener('click', (e)=>{
             modal.classList.remove('modal--show');
         }, 100);
 });
+closeModalV2.addEventListener('click', (e)=>{
+    e.preventDefault();
+        setTimeout(() => {
+            click=false;
+            modal.classList.remove('modal--show');
+        }, 100);
+});
 modal.addEventListener('click', (e)=>{
     if (!click) {
         modal.classList.remove('modal--show');
@@ -238,16 +246,27 @@ window.onscroll = function () {
     var posButView = posTopView + window.innerHeight;
     var elemTop = imagen.offsetTop;
     var elemBottom = elemTop + imagen.offsetHeight;
+    console.log("-------------------");
+    
+    console.log("elemBottom: "+elemBottom);
+    console.log(" posButView: "+posButView);
+    console.log("posTopView : "+posTopView);
+    console.log("elemTop : "+elemTop);
     if ((elemBottom < posButView && elemBottom > posTopView) ||(elemTop > posTopView && elemTop < posButView)) {
+        console.log((elemBottom < posButView && elemBottom > posTopView));
+        console.log((elemTop > posTopView && elemTop < posButView));
+        
+        
+        
         if(visible === false){
-            /* console.log("Si es visible"); */
+            console.log("Si es visible 📊📦🚀");
             navbar.classList.remove('effect');
             nave.style.zIndex=-1;
         }
         visible=true;
     } else {
         if (visible === true){
-            /* console.log("No es visible"); */
+            console.log("No es visible 📊💼💰");
             navbar.classList.add('effect');
             nave.style.zIndex=0;
             
