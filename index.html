@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
     <div class="cont-principal">
@@ -27,42 +29,120 @@
                     </div>
                 </div >
             </div> 
-            <br>
+
             <div class="cont-info">
-                <div id="contacto" class="info ">
-                    <p><b>Edad: </b>26 años. <b>Estado civil: </b> Soltero</p>
-                    <p><b>Correo: </b>j.salvador.martinez.cervantes<span></span>@gmail.com </p>
-                    <p><b>Tel: </b>+044 mx 55 66 23 28 55 </p>
-                    <p><b>Ubicación:</b> Edo. Mex  Naucalpan de Juárez CP.53670</p>
+                <div id="contacto" class="info">
+                    <h3> <b>📧 Contactos</b></h3>
+                    <br>
+                    <p><b><i class="fas fa-user"></i> Edad: </b>29 años. <b><i class="fas fa-heart"></i> Estado civil: </b> Soltero</p>
+                    <p class="copiable">
+                        <b><i class="fas fa-envelope"></i> Correo: </b>
+                        <span class="copy-content email" >j.salvador.martinez.cervantes@gmail.com</span>
+                        <button class="copy-btn" onclick="copyToClipboard(this)" data-tooltip="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </p>
+                    <p class="copiable">
+                        <b><i class="fas fa-phone"></i> Tel: </b>
+                        <span class="copy-content">55 66 23 28 55</span>
+                        <button class="copy-btn" onclick="copyToClipboard(this)" data-tooltip="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </p>
+                    <p><b><i class="fas fa-map-marker-alt"></i> Ubicación:</b> CDMX, Centro histórico</p>
                 </div>
             </div>
-            
-            <div class="formacion pad ">    
-                <h3 > <b >FORMACIÓN ACADÉMICA</b> </h3>
+            <div class="extra-info pad">
+            <div class="formacion pad intereses-section">    
+                <h3 > <b >🎓FORMACIÓN ACADÉMICA</b> </h3>
                 <br>
-                <p> <b>2021 |  Ingeniería en Sistemas Computacionales.</b> 
-                    <br>   </p>
-                <p >“Tecnológico de Estudios Superiores de Huixquilucan”.</p>
-                <p>CP 52773, Estado de México
-                    (0155) 82881907</p>
-                <p >teshuixquilucan.edomex.gob.mx</p>
-                <p></p>
-
-                <hr>
+                <h4> <b>Ingeniería en Sistemas Computacionales</b> 
+                    <br>   </h4>
+                <p >Tecnológico de Estudios Superiores de Huixquilucan</p>
+                <p>Estado de México</p>
             </div>
-            <div class="cursos pad">
-                <h3> <b>Cursos y Certificaciones</b> </h3>
+           
+            <div class="cursos pad intereses-section">
+                <h3> <b>🏆  Cursos y Certificaciones</b> </h3>
                 <br>
-                
-                <ul>
-                    <li>Angular : De cero a experto 7+ </li>
-                    <li>Master en CSS : Responsive, SASS, Flexbox, Grid, Bootstrap 4  </li>
-                    <li>Master en JavaScript : Aprender JS, jQuery, Angular,</li>
-                    <li>Introducción a NodeJS </li>
-                    <li>PHP Y Programación orientada a objetos </li>
-                    <li>.Net con C# (POO) Curso </li>
-                    <li>Progrmacion orientada a objetos JAVA  </li>
+                <ul class="cursos-list">
+                    <li>⚡ Angular : De cero a experto 7+ </li>
+                    <li>🎨 Master en CSS : Responsive, SASS, Flexbox, Grid, Bootstrap 4  </li>
+                    <li>💻 Master en JavaScript : Aprender JS, jQuery, Angular</li>
+                    <li>🚀 Introducción a NodeJS </li>
+                    <li>🔧 PHP Y Programación orientada a objetos </li>
+                    <li>📱 .Net con C# (POO) Curso </li>
+                    <li>☕ Programación orientada a objetos JAVA  </li>
                 </ul>
+            </div>
+
+            
+                <div class="idiomas-section">
+                    <h3> <b> 🌎 Idiomas </b> </h3>
+                    <br>
+                    <div class="idioma-nivel">
+                        <span class="idioma">Inglés:</span>
+                        <div class="nivel-badges">
+                            <span class="badge active">Básico</span>
+                            <span class="badge mide">Intermedio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="intereses-section">
+                    <h3> <b>🚵‍♀️ Intereses & Pasiones</b></h3>
+                    <br>
+                    <div class="intereses-grid">
+                        <div class="interes-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span class="texto">Tecnología</span>
+                        </div>
+                        <div class="interes-item">
+                            <i class="fas fa-music"></i>
+                            <span class="texto">Producción Musical</span>
+                        </div>
+                        <div class="interes-item">
+                            <i class="fas fa-palette"></i>
+                            <span class="texto">Pintura</span>
+                        </div>
+                        <div class="interes-item">
+                            <i class="fas fa-plane-departure"></i>
+                            <span class="texto">Viajar</span>
+                        </div>
+                        <div class="interes-item">
+                            <i class="fas fa-mountain"></i>
+                            <span class="texto">Montañismo</span>
+                        </div>
+                        <div class="interes-item">
+                            <i class="fas fa-book-reader"></i>
+                            <span class="texto">Aprendizaje continuo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="idiomas-section redes-section">
+                    <h3> <b> 📡 Redes </b> </h3>
+                    <br>
+                    <div class="item-redes">
+                        <span class="">Linkedin:</span>
+                        <div class="nivel-badges">
+                            <span class="badge active copy-content"> <a href="https://www.linkedin.com/in/juan-salvador-martinez-cervantes-4b22722b8/">linkedin.com/in/juan-salvador-martinez-cervantes-4b22722b8</a>
+                            </span>
+                            <button class="copy-btn" onclick="copyToClipboard(this)" data-tooltip="Copiar">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-redes">
+                        <span class="">Github:</span>
+                        <div class="nivel-badges">
+                            <span class="badge active copy-content"> <a href="https://github.com/JuanSalvadorMC" target="_blank">github.com/JuanSalvadorMC</a> 
+                            </span>
+                            <button class="copy-btn" onclick="copyToClipboard(this)" data-tooltip="Copiar">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="col2 " id="about">
@@ -78,11 +158,11 @@
 
             <div class="pestanas " id="navbrand">
                 <ul>
-                    <li><a id="xabout" class="selecti" href="#about"> About</a>   </li>
-                    <li><a id="xcual" href="#cualificacion">Cualificaciones</a> </li>
-                    <li><a id="xexp" href="#experience">Experiencie</a> </li>
+                    <li><a id="xabout" class="selecti" href="#about"> Acerca de</a>   </li>
+                    <li><a id="xcual" href="#cualificacion">Tecnologías</a> </li>
+                    <li><a id="xexp" href="#experience">Experiencia</a> </li>
                     <li><a id="xpor" href="#portf">Portafolio</a> </li>
-                    <li><a id="xcont" href="#main"> Contact</a></li> 
+                    <li><a id="xcont" href="#main"> Contacto</a></li> 
                 </ul>
             </div>
             <div class="portafolio"></div>
@@ -94,7 +174,7 @@
                 <!--  -->
                 <div class="acercade pad" >
                     <p> <b>¡Hola!</b>
-                        Mí nombre es Salvador Martinez soy un apasionado del Desarrollo Web con 3 años de experiencia, disfruto mucho el codear, aprender y desarrollar nuevos proyectos. <br> Busco que mi trabajo hable por mí y demuestre lo que tengo para ofrecer, me gusta aprender de nuevas tecnologías y trabajar en equipo.
+                        Mí nombre es Salvador Martinez soy un apasionado del Desarrollo Web con 5 años de experiencia, disfruto mucho el codear, aprender y desarrollar nuevos proyectos. <br> Busco que mi trabajo hable por mí y demuestre lo que tengo para ofrecer, me gusta aprender de nuevas tecnologías y trabajar en equipo.
                         <p> Soy una persona social, honesta, ordenada y trabajadora, cualquier duda que tengas sobre mí no dudes en preguntarme!</p>
                     </p>
                 </div >
@@ -104,98 +184,221 @@
                 <!-- 2 -->
             </div>
             <div class="skills " id="cualificacion">
-                <h4> CUALIFICACIONES</h4>
-                <ul>
-                <li>Desarrollo Web: html5, css, sass, JavaScript,
-                TypeScript, MediaQuerys, Ionic, Boostrap, Angular,
-                Angular Material, Operadores ternarios, ECMAScript 6</li>
-                    <li> Desarrollo frontend SPA en Angular 10+ 
-                        nivel
-                        intermedio:
-                        -Promesas,Suscripciones ,Pipes, lazyload
-                        -Componentes, Directivas ,Módulos
-                        -Formularios reactivos
-                        -Guards (manejo de sesiones)
-                        -Fileupload 
-                        -Consumo de servicios Rest API</li>
-                    <li>Web services java, nodeJs(express).</li>
-                    <li>Programación Orientada a Objetos (java, c#, c++, c,
-                    php).</li>
-                    <li>Consulta y Sintaxis SQL, bd´s MySql.</li>
-                    <li>Trabajo con herramientas de control de versiones
-                    (github, gitlab)</li>
-                    <li>Metodologías de Proyectos: Agile, Canvas, Scrum</li>
-                    <li>Manejo de paquetería office.</li>
-                    <li>Programación Orientada a Objetos (java, c#, c++, c,
-                        php).
-                        Manejo de terminal Linux , Windows y Gitbash .</li>
-                    <li>Conocimiento en Desing Center y Story Teller Open
-                        Text</li>
-                <li>Entendimiento del inglés (escrito)</li>
-                <li>Capacidad para negociar tomar de decisiones</li>
-                <li>Resolución de problemas, alternativas de trabajo</li>
-                <li>Responsabilidad del trabajo</li>
-                <li>Innovación, diseño</li>
-                <li>Redacción</li>
-                <li>Autodidacta</li>
+                <!-- Estilo #6 - Manrope Tech -->
+                <div class="section-header style-manrope">
+                    <span class="subtle-label">tecnología</span>
+                    <h2 >STACK</h2>
+                </div>
+
+                <ul class="skills-list">
+                    <li class="skill-category">
+                        <h4><i class="fas fa-laptop-code"></i> Desarrollo Frontend</h4>
+                        <div class="skill-items">
+                            <span class="skill-item"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="skill-item"><i class="fab fa-sass"></i> Sass</span>
+                            <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-item"><i class="fab fa-angular"></i> Angular</span>
+                            <span class="skill-item"><i class="fas fa-mobile-alt"></i> Ionic</span>
+                            <span class="skill-item"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                            <span class="skill-item"><i class="fas fa-layer-group"></i> Angular Material</span>
+                            <span class="skill-item"><i class="fas fa-puzzle-piece"></i> PrimeNG</span>
+                        </div>
+                    </li>
+                    <li class="skill-category">
+                        <h4><i class="fas fa-code"></i> TypeScript & ECMAScript</h4>
+                        <div class="skill-items">
+                            <span class="skill-item"><i class="fas fa-check-circle"></i> Tipado estático/dinámico</span>
+                            <span class="skill-item"><i class="fas fa-cube"></i> Interfaces y tipos</span>
+                            <span class="skill-item"><i class="fas fa-magic"></i> Decorators</span>
+                            <span class="skill-item"><i class="fas fa-stream"></i> RxJS</span>
+                            <span class="skill-item"><i class="fas fa-plug"></i> Inyección de dependencias</span>
+                            <span class="skill-item"><i class="fas fa-shield-alt"></i> SOLID</span>
+                            <span class="skill-item"><i class="fas fa-bolt"></i> Lazy Loading</span>
+                            <span class="skill-item"><i class="fas fa-edit"></i> Formularios reactivos</span>
+                            <span class="skill-item"><i class="fas fa-lock"></i> Guards</span>
+                            <span class="skill-item"><i class="fas fa-bug"></i> Testing</span>
+                            <span class="skill-item"><i class="fas fa-code-branch"></i> ESLint/Prettier</span>
+                        </div>
+                    </li>
+                    <li class="skill-category">
+                        <h4><i class="fas fa-server"></i> Desarrollo Backend y Otros Lenguajes</h4>
+                        <div class="skill-items">
+                            <span class="skill-item"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="skill-item"><i class="fas fa-cogs"></i> Web Services</span>
+                            <span class="skill-item"><i class="fab fa-java"></i> Java</span>
+                            <span class="skill-item"><i class="fab fa-microsoft"></i> C#</span>
+                            <span class="skill-item"><i class="fas fa-file-code"></i> C++</span>
+                            <span class="skill-item"><i class="fab fa-php"></i> PHP</span>
+                            <span class="skill-item"><i class="fab fa-linux"></i> Linux</span>
+                            <span class="skill-item"><i class="fas fa-terminal"></i> GitBash</span>
+                        </div>
+                    </li>
+                    <li class="skill-category">
+                        <h4><i class="fas fa-database"></i> Bases de Datos</h4>
+                        <div class="skill-items">
+                            <span class="skill-item"><i class="fas fa-table"></i> SQL</span>
+                            <span class="skill-item"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="skill-item"><i class="fas fa-project-diagram"></i> Diseño DB</span>
+                            <span class="skill-item"><i class="fas fa-terminal"></i> PL/SQL</span>
+                            <span class="skill-item"><i class="fas fa-search"></i> Consultas</span>
+                            <span class="skill-item"><i class="fas fa-box"></i> Paquetes</span>
+                            <span class="skill-item"><i class="fas fa-terminal"></i> Funciones</span>
+                            <span class="skill-item"><i class="fas fa-sync"></i> Cursores</span>
+                        </div>
+                    </li>
+                    <li class="skill-category">
+                        <h4><i class="fas fa-code-branch"></i> Control de Versiones</h4>
+                        <div class="skill-items">
+                            <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="skill-item"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="skill-item"><i class="fab fa-gitlab"></i> GitLab</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="experiencia pad4" id="experience"> 
-            <h3> EXPERIENCIA LABORAL</h3> 
-            <h4 class="mt-5">  2018-2020 ||  Prácticas Profesionales | Desarrollo Web.</h4>
-                <h5>IES Systems S.A. de C.V.</h5>
-                <p>-Gestión de datos XML con java.</p>
-                <p>-Gestión de servicios web en java (Apache).</p>
-                <p>-Creación de páginas web (Angular 8).</p>
-                <p>-Consumo de servicios rest API.</p>
-                <p>-Documentación de proyectos.</p>
-                <p>-Pruebas Unitarias y debBug</p>
-                <hr>
-                <h4 class="mt-5">2020-2021 || Desarrollador Web</h4>
-                <h5>Casa Mecate S.A. de C.V.</h5>
-                <p>-Maquetación de proyectos</p>
-                <p>-Desarrollo de aplicaciones móviles con Ionic framework</p>
-                <p>-Desarrollo y gestión de páginas web (Angular, JavaScript,php).</p>
-                <p>-Consumo de servicios rest.</p>
-                <p>-Integración de backend</p>
-                <p>-Manejo, análisis y creación de BD´s MySQL</p>
+                <div class="section-header style-manrope">
+                    <span class="subtle-label">Mi trayectoria</span>
+                    <h2>EXPERIENCIA LABORAL</h2>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="job-entry">
+                        <div class="timeline-dot"></div>
+                        <h4>05/2024 || Ingeniero Frontend</h4>
+                        <h5>Smart Payment Services</h5>
+                        <p>Desarrollo de aplicativos web (Angular 19)</p>
+                        <p>Control de versiones, documentación, code review</p>
+                        <p>Pruebas unitarias, herramientas de calidad de código</p>
+                        <p>Configuración de microfrontends</p>
+                        <p>Desarrollo modular, componentes reutilizables</p>
+                    </div>
+
+                    <div class="job-entry">
+                        <div class="timeline-dot"></div>
+                        <h4>12/2021 - 05/2024 || Desarrollador de software</h4>
+                        <h5>Consultor Grupo Salinas</h5>
+                        <p>Desarrollo de aplicaciones web (Angular 12/17, JavaScript)</p>
+                        <p>Desarrollo de jsp's (java)</p>
+                        <p>Pruebas unitarias, herramientas de calidad de código</p>
+                        <p>Control de versiones, documentación, code review</p>
+                        <p>Análisis de requerimientos y desarrollo de planes de trabajo</p>
+                        <p>Desarrollo de stored procedure (Oracle, PL/SQL)</p>
+                        <p>Diseño de base de datos, DML, DDL</p>
+                    </div>
+
+                    <div class="job-entry">
+                        <div class="timeline-dot"></div>
+                        <h4>09/2020 - 11/2021 || Desarrollador Web</h4>
+                        <h5>Casa Mecate S.A. de C.V.</h5>
+                        <p>Desarrollo de aplicaciones móviles (Ionic)</p>
+                        <p>Desarrollo de proyectos web (Angular, JavaScript, php)</p>
+                        <p>Consumo de servicios rest</p>
+                        <p>Administración y desarrollo de BD´s</p>
+                        <p>Control de versiones (GitLab)</p>
+                    </div>
+
+                    <div class="job-entry">
+                        <div class="timeline-dot"></div>
+                        <h4>2018-2020 || Desarrollador Web</h4>
+                        <h5>IES Systems S.A. de C.V.</h5>
+                        <p>Control de versiones (GitHub)</p>
+                        <p>Desarrollo de proyectos web (Angular 9)</p>
+                        <p  id="portf">Consumo de servicios rest API</p>
+                    </div>
+                </div>
             </div>
             
         </section>
-        
-        <section id="portf" class="cont-portf container">
-            
-            <h2 >PORTAFOLIO</h2>
-            <h5>Algunos de mis trabajos</h5>
+        <section class="cont-portf container">
+
+            <div class="section-header style-manrope">
+                <span class="subtle-label">Algunos de mis trabajos</span>
+                <h2  class="color-2">PORTAFOLIO</h2>
+            </div>
             <div>
-                
-                <div  class="cont-proyecto center container slideWalmart">
+                <div  class="cont-proyecto center container slideWbr">
                     <div class="cont-img2">
-                        <img  class="img-card" src="./assets/portafolio/Walmart/Captura.PNG" alt="./assets/portafolio/Walmart/Captura.PNG">
+                        <img  class="img-card" src="./assets/portafolio/WBR-Palacio/wbr5.jpeg" alt="./assets/portafolio/Walmart/Captura.PNG">
                     </div>
                     <div class="text-project mx-4 ">
-                        <h4>Sistema de trámites WALMART México</h4>
-                        <p>Un sistema de tramites interno para walmart, mis tareas principales en este proyecto fue la creación formularios, validar campos, la creación de distintos tipos de componentes, trabajé mucho con inputs, botones, combobox, checks, calendarios, paginators, modales. De una forma modular de trabajo para poder reciclar y compartir componentes entre vistas.
-                        </p><br>
-                        <p>Tecnologías:</p>
-                        <br>
-                        <p><b>Angular | SCSS | Html | JavaScript | TypeScript | Servicios rest </b>   </p>
+                        <h4>Tablero de Inventario Palacio de Hierro</h4>
+                        <p>Trabaje en un sistema de versiones de inventario basado en un tablero estilo Excel
+                             para visualizar y predecir el stock de productos, así como las pérdidas y ganancias semanales. 
+                             Este fue uno de los proyectos más complejos en los que he trabajado debido a la lógica avanzada
+                              y la interdependencia de datos.
+                            Los tableros incluían inputs en campos clave que permitían modificar el stock, 
+                            las ventas y las variaciones, impactando los cálculos futuros para predecir pérdidas o ganancias. 
+                            Cada versión del inventario podía guardarse de manera independiente y exportarse a Excel para un 
+                            análisis detallado. </p>
+                        <div class="tech-stack">
+                            <span class="tech-chip"><i class="fab fa-angular"></i>Angular</span>
+                            <span class="tech-chip"><i class="fab fa-sass"></i>SCSS</span>
+                            <span class="tech-chip"><i class="fab fa-html5"></i>HTML</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>TypeScript</span>
+                            <span class="tech-chip"><i class="fas fa-server"></i>REST APIs</span>
+                        </div>
                     </div>
                 </div>
                 <div  class="cont-proyecto center container slidenissan">
                     <div class="text-project mx-4  texto-rigth">
                         <h4>App Nissan</h4>
-                        <p>AppMovil para consultar el estado de delivery de mercancía. Se me
-                            encomendó crear la estructura del proyecto y la maquetación de todas las
-                            vistas, un diseño responsivo para tabletas, ipad y celulares. Se trabajó con
-                            AngularMaterial y algunas librerías externas para la generación de los
-                            steppers de seguimiento.
-                        </p><br><br><br><br>
-                        <p>Tecnologías:</p><br>
-                        <p><b>Ionic |AngMaterial | SCSS | Html | JavaScript | TypeScript </b>  </p> 
+                        <p>Desarrollé la estructura y maquetación de una app móvil para el seguimiento de 
+                            entregas de mercancía. Implementé un diseño responsivo optimizado para tabletas,
+                             iPads y celulares, utilizando Angular Material y librerías externas 
+                             para la generación de steppers de seguimiento. 
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-chip"><i class="fas fa-mobile-alt"></i>Ionic</span>
+                            <span class="tech-chip"><i class="fab fa-angular"></i>AngularMaterial</span>
+                            <span class="tech-chip"><i class="fab fa-sass"></i>SCSS</span>
+                            <span class="tech-chip"><i class="fab fa-html5"></i>HTML</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>JavaScript</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>TypeScript</span>
+                        </div>
                     </div>
                     <div class="cont-img2">
                         <img  class="img-card" src="./assets/portafolio/Nissan/portada1.JPG" alt="./assets/portafolio/Walmart/Captura.PNG">
+                    </div>
+                </div>
+               <div  class="cont-proyecto center container slideWalmart">
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/Walmart/Captura.PNG" alt="./assets/portafolio/Walmart/Captura.PNG">
+                    </div>
+                    <div class="text-project mx-4 ">
+                        <h4>Sistema de trámites WALMART México</h4>
+                        <p> Trabajo en colaboracion con otros desarrolladores en la creación de un sistema administrativos para Walmart, 
+                            desarrolle formularios dinámicos, validación de campos, componentes reutilizables 
+                            (Inputs, botones, combobox, checkboxes, calendarios, paginadores y modales), 
+                            implementando una arquitectura modular para optimizar la reutilización y mantenimiento de componentes.</p>
+                        <div class="tech-stack">
+                            <span class="tech-chip"><i class="fab fa-angular"></i>Angular</span>
+                            <span class="tech-chip"><i class="fab fa-sass"></i>SCSS</span>
+                            <span class="tech-chip"><i class="fab fa-html5"></i>HTML</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>JavaScript</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>TypeScript</span>
+                            <span class="tech-chip"><i class="fas fa-server"></i>REST API</span>
+                        </div>
+                    </div>
+                </div>
+                <div  class="cont-proyecto center container slideAppHp">
+                    <div class="text-project mx-4  texto-rigth">
+                        <h4>App Palacio de Hierro</h4>
+                        <p>AppMovil para consultar de promociones, pedidos y stock de mercancía
+                        por sucursales. Realicé la estructura del proyecto y la maquetación de
+                        todas las vistas, un diseño responsivo para ipad y iPhone. </p>
+                        <div class="tech-stack">
+                            <span class="tech-chip"><i class="fas fa-mobile-alt"></i>Ionic</span>
+                            <span class="tech-chip"><i class="fab fa-angular"></i>AngularMaterial</span>
+                            <span class="tech-chip"><i class="fab fa-sass"></i>SCSS</span>
+                            <span class="tech-chip"><i class="fab fa-html5"></i>HTML</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>JavaScript</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="cont-img2">
+                        <img  class="img-card" src="./assets/portafolio/palacioH/Captura.JPG" alt="./assets/portafolio/Walmart/Captura.PNG">
                     </div>
                 </div>
                 <div  class="cont-proyecto center container hero__ctar">
@@ -204,63 +407,45 @@
                     </div>
                     <div class="text-project mx-4 ">
                         <h4>Crowdfunding Kekuul.com  </h4>
-                        <p>Realice la maquetación completa para un sitio web de crowdfunding de la
-                            mano de un diseñador, en total se realizaron más de 15 vistas el proyecto
-                            fue creado con Laravel de PHP. Trabajé con php para la conexión de las
-                            vistas con la base de datos. Trabajé de la mano con el líder de proyecto
-                            para el análisis y creación del BD requerida para el proyecto. </p><p></p> El proyecto actualmente ha sufrido cambios de terceros, pero se puede
+                        <p>Desarrollé la maquetación completa de un sitio web de crowdfunding en colaboración con un diseñador, 
+                            implementando más de 15 vistas. El proyecto fue construido con Laravel (PHP), 
+                            donde también trabajé en la conexión a la base de datos. Además, 
+                            colaboré en el análisis y diseño de la base de datos. El proyecto actualmente ha sufrido cambios de terceros, pero se puede
                             acceder atreves la dirección: </p>
-                            <p>www.kekuul.com/home </p>
-                            <br>
-                        <p>Tecnologías:</p>
-                        <br>
-                        <p><b>PHP | Laravel | CSS | Html | JavaScript | JQuery | MySQL  </b>   </p>
+                            <p>www.kekuul.com</p>
+                        <div class="tech-stack">
+                            <span class="tech-chip"><i class="fab fa-php"></i>PHP</span>
+                            <span class="tech-chip"><i class="fab fa-laravel"></i>Laravel</span>
+                            <span class="tech-chip"><i class="fab fa-css3"></i>CSS</span>
+                            <span class="tech-chip"><i class="fab fa-html5"></i>HTML</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>JavaScript</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>JQuery</span>
+                            <span class="tech-chip"><i class="fas fa-database"></i>MySQL</span>
+                        </div>
                     </div>
                 </div>
                 <div  class="cont-proyecto center container slideIesWeb">
                     <div class="text-project mx-4  texto-rigth">
                         <h4>Salva Un Negocio</h4>
-                        <p>Un proyecto crowdfunding para la asociación, compra venta y remate, de
-                        pequeños- medianos negocios</p>
-                        <p>Maquetación, validación de formularios, consumo de Apis, crud a bd por
-                        medio de servicios rest, validación de usuarios y manejo de sesiones.</p>
-                        <p>https://salvaunnegocio.com.mx/</p>
-                        <p>Tecnologías:</p><br>
-                        <p><b>Angular | AngMaterial | SCSS | Html | Typecript | ServiciosRest  </b>  </p> 
+                        <p>Desarrollé la maquetación y funcionalidad de un proyecto rnfocado en la compra, 
+                            venta y remate de pequeños y medianos negocios. Implementé validación de formularios, 
+                            consumo de APIs, conexion de servicios REST, validación de usuarios y 
+                            gestión de sesiones.</p>
+                        <p>salvaunnegocio.com.mx</p>
+                        <div class="tech-stack">
+                            <span class="tech-chip"><i class="fab fa-angular"></i>Angular</span>
+                            <span class="tech-chip"><i class="fab fa-angular"></i>AngularMaterial</span>
+                            <span class="tech-chip"><i class="fab fa-sass"></i>SCSS</span>
+                            <span class="tech-chip"><i class="fab fa-html5"></i>HTML</span>
+                            <span class="tech-chip"><i class="fab fa-js"></i>TypeScript</span>
+                            <span class="tech-chip"><i class="fas fa-server"></i>REST API</span>
+                        </div>
                     </div>
                     <div class="cont-img2">
                         <img  class="img-card" src="./assets/portafolio/SUN/sun.6png.png" alt="./assets/portafolio/Walmart/Captura.PNG">
                     </div>
-                </div>
-                <div  class="cont-proyecto center container slideWbr">
-                    <div class="cont-img2">
-                        <img  class="img-card" src="./assets/portafolio/WBR-Palacio/wbr5.jpeg" alt="./assets/portafolio/Walmart/Captura.PNG">
-                    </div>
-                    <div class="text-project mx-4 ">
-                        <h4>Tablero de Inventario Palacio de Hierro</h4>
-                        <p>Se realizó un sistema de versiones de inventario con tablero dinámico
-                        para visualizar y predecir stock de producto, pérdidas y ganancias por
-                        semana. Se trabajó la estructura del proyecto, maquetación, lógica y
-                        funcionalidad, consumo de Apis rest, crud con servicios rest, validación de
-                        usuarios, creación de archivos excel.</p><br>
-                        <p>Tecnologías:</p>
-                        <br>
-                        <p><b>Angular | SCSS | Html | JavaScript | TypeScript | Servicios rest </b>   </p>
-                    </div>
-                </div>
-                <div  class="cont-proyecto center container slideAppHp">
-                    <div class="text-project mx-4  texto-rigth">
-                        <h4>App Palacio de Hierro</h4>
-                        <p>AppMovil para consultar de promociones, pedidos y stock de mercancía
-                        por sucursales. Realicé la estructura del proyecto y la maquetación de
-                        todas las vistas, un diseño responsivo para ordenador, ipad y iPhone. </p><br>
-                        <p>Tecnologías:</p><br>
-                        <p><b>Ionic |AngMaterial | SCSS | Html | JavaScript | TypeScript</b>  </p> 
-                    </div>
-                    <div class="cont-img2">
-                        <img  class="img-card" src="./assets/portafolio/palacioH/Captura.JPG" alt="./assets/portafolio/Walmart/Captura.PNG">
-                    </div>
-                </div>
+                </div>                
+                
                 
             </div>
             <div class="modal ">
@@ -309,9 +494,18 @@
                         </button>
                     </div>
                     <a href="#" class="modal__close">Cerrar Modal</a>
+                    <a href="#" class="modal__close_v2"><i class="fa-solid fa-xmark"></i></a>
                 </div>
             </div>
-        
+        </section>
+        <section class="">
+            <footer>
+                <p>Proyecto desarrollado en JavaScript Vanilla</p>
+                <p>j.salvador.martinez.cervantes@gmail.com 
+                </p>
+                <p>55 66 23 28 55</p>
+                <p>:)</p>                
+            </footer>
         </section>
 
 </div>
@@ -377,6 +571,22 @@
                  }
              });
         });
+    </script>
+    <script>
+        function copyToClipboard(button) {
+            const content = button.parentElement.querySelector('.copy-content').textContent;
+            navigator.clipboard.writeText(content).then(() => {
+                // Cambiar el tooltip a "¡Copiado!"
+                button.setAttribute('data-tooltip', '¡Copiado!');
+                button.classList.add('copied');
+                
+                // Restaurar el tooltip original después de 2 segundos
+                setTimeout(() => {
+                    button.setAttribute('data-tooltip', 'Copiar');
+                    button.classList.remove('copied');
+                }, 2000);
+            });
+        }
     </script>
 </body>
 </html><!-- 
