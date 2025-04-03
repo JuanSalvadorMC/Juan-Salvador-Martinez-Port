@@ -700,6 +700,12 @@ body{
     background-color: #153d3d!important;
 
 }
+.kekuul-target{
+    p{
+        margin-bottom: 0px !important;
+    }
+}
+
 .img-card{
     width: 400px;
 }
@@ -1440,10 +1446,11 @@ body{
     color: #ff2e63;
     font-weight: 600;
 }
+
 footer{
     opacity: 0.9;
     padding: 2rem;
-    width: 99vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1452,6 +1459,7 @@ footer{
     p{
         color: #ff2e63;
         font-weight: lighter;
+        margin-bottom: 0px !important;
     }
 }
 @media (max-width: 768px) {
