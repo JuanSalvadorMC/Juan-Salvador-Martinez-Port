@@ -56,6 +56,10 @@ The site is built with a responsive layout that adapts seamlessly to various scr
 
 // El sitio está construido con un diseño responsivo que se adapta perfectamente a varios tamaños de pantalla, asegurando una experiencia fluida tanto en escritorio como en móviles.
 
+Built with modern CSS techniques like flexbox, media queries, and Bootstrap utilities.
+
+// Construido con técnicas modernas de CSS como flexbox, media queries y utilidades de Bootstrap.
+
 <p align="center">
   <img src="assets/previews/Captura_03.PNG" alt="Extra preview" width="800"/>
 </p>
@@ -66,14 +70,6 @@ The site is built with a responsive layout that adapts seamlessly to various scr
   <img src="assets/previews/Captura_04.PNG" alt="Responsive view 1" width="200"/>
   <img src="assets/previews/Captura_05.PNG" alt="Responsive view 2" width="200"/>
 </p>
-
-The portfolio is fully responsive. It adapts to different screen sizes including mobile phones, tablets, and desktop monitors.
-
-// El portafolio es completamente responsivo. Se adapta a diferentes tamaños de pantalla, incluidos teléfonos móviles, tabletas y monitores de escritorio.
-
-Built with modern CSS techniques like flexbox, media queries, and Bootstrap utilities.
-
-// Construido con técnicas modernas de CSS como flexbox, media queries y utilidades de Bootstrap.
 
 ---
 
@@ -92,7 +88,7 @@ git clone https://github.com/juanmartinezcervantes/Juan-Salvador-Martinez-Port.g
 # 2. Enter the folder   // Entra en la carpeta
 cd Juan-Salvador-Martinez-Port
 
-# 3. Open the index.html file in your favorite browser  // Haz doble clic en el archivo index.html se abrira en tu navegador favorito
+# 3. Open the index.html file in your favorite browser  // Haz doble clic en el archivo index.html se abrira en tu navegador predeterminado
 # You can double-click or use an extension like Live Server in VS Code  // Puedes hacer doble clic o usar una extensión como Live Server en VS Code
 ```
 
@@ -104,4 +100,3 @@ cd Juan-Salvador-Martinez-Port
 
 Thank you for visiting! 🙌
 
-// ¡Gracias por visitar! 
