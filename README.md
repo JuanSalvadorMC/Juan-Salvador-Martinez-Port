@@ -1,55 +1,105 @@
 # 🚀 Juan Salvador Martínez - Web Portfolio
 
-¡Bienvenido a mi portafolio! Aquí podrás explorar una selección de proyectos que reflejan mi experiencia como **Desarrollador Frontend**.
+Welcome to my portfolio! Here you can explore a selection of projects that reflect my experience as a **Frontend Developer**.
+// Bienvenido a mi portafolio! Aquí puedes explorar una selección de proyectos que reflejan mi experiencia como Desarrollador Frontend.
 
-## 🔍 Preview del Portafolio
+---
+
+## 🔍 Hero Section Preview
+// Vista previa de la sección principal
 
 <p align="center">
-  <img src="assets/previews/Captura_01.PNG" alt="Vista hero" width="800"/>
-  <img src="assets/previews/Captura_02.PNG" alt="Pantalla completa sin scroll" width="800"/>
-  <img src="assets/previews/Captura_03.PNG" alt="Extra preview" width="800"/>
-</p
+  <img src="assets/previews/Captura_01.PNG" alt="Hero view" width="800"/>
+</p>
 
-🌐 Ver online
-Puedes visitar la versión en línea de mi portafolio aquí:
+## 🌐 Online Version
 
-👉 https://juansalvadormc.github.io/Juan-Salvador-Martinez-Port/
+You can visit the online version of my portfolio here:
+// Puedes visitar la versión en línea de mi portafolio aquí:
 
----
-
-## 🛠️ Tecnologías utilizadas
-
-- ⚙️ HTML5, CSS3, JavaScript Vanilla
-- 🎨 Sass, Bootstrap
-- 🧪 Responsive Design
-- 🖼️ Icons & Assets optimizados
+👉 [Juan-Salvador-Martinez-Port](https://juansalvadormc.github.io/Juan-Salvador-Martinez-Port/)
 
 ---
 
-## 📦 Estructura del proyecto
+## 🛠️ Technologies Used
+// Tecnologías utilizadas
+
+- ⚙️ HTML5, CSS3, Vanilla JavaScript  // HTML5, CSS3, JavaScript puro
+- 🎨 Sass, Bootstrap                  // Sass, Bootstrap
+- 🧪 Responsive Design                // Diseño responsivo
+- 🖼️ Optimized Icons & Assets         // Iconos y recursos optimizados
+
+---
+
+## 📦 Project Structure
 
 ```bash
 /
-├── assets/              # Imágenes y recursos visuales
-├── styles/              # Estilos globales
-├── index.html           # Punto de entrada
-├── effect.js            # Logica del modal
-├── t.min.js             # Libreria del carrusel
-├── app.js               # Evento para iniciar el carrusel
+├── assets/              # Images and visual resources
+├── styles/              # Global styles
+├── index.html           # Entry point
+├── effect.js            # Modal logic
+├── t.min.js             # Carousel library
+├── app.js               # Event to initialize carousel
 └── ...
+```
 
-🚀 ¿Cómo levantar el proyecto?
-Puedes clonar el proyecto y visualizarlo localmente siguiendo estos pasos:
+---
 
-bash
-Copiar
-Editar
-# 1. Clona el repositorio
+## 💻 Full Page Layout
+
+<p align="center">
+  <img src="assets/previews/Captura_02.PNG" alt="Full screen without scroll" width="800"/>
+</p>
+
+The site is built with a responsive layout that adapts seamlessly to various screen sizes, ensuring a smooth experience on both desktop and mobile devices.
+// El sitio está construido con un diseño responsivo que se adapta perfectamente a varios tamaños de pantalla, asegurando una experiencia fluida tanto en escritorio como en móviles.
+
+<p align="center">
+  <img src="assets/previews/Captura_03.PNG" alt="Extra preview" width="800"/>
+</p>
+
+## 📱 Responsive Design
+// Diseño Responsivo
+
+<p align="center">
+  <img src="assets/previews/Captura_04.PNG" alt="Responsive view 1" width="400"/>
+  <img src="assets/previews/Captura_05.PNG" alt="Responsive view 2" width="400"/>
+</p>
+
+The portfolio is fully responsive. It adapts to different screen sizes including mobile phones, tablets, and desktop monitors.
+// El portafolio es completamente responsivo. Se adapta a diferentes tamaños de pantalla, incluidos teléfonos móviles, tabletas y monitores de escritorio.
+
+Built with modern CSS techniques like flexbox, media queries, and Bootstrap utilities.
+// Construido con técnicas modernas de CSS como flexbox, media queries y utilidades de Bootstrap.
+
+---
+
+## 🚀 How to Run the Project?
+// ¿Cómo ejecutar el proyecto?
+
+You can clone the project and view it locally by following these steps:
+// Puedes clonar el proyecto y visualizarlo localmente siguiendo estos pasos:
+
+```bash
+# 1. Clone the repository
+// Clona el repositorio
 git clone https://github.com/juanmartinezcervantes/Juan-Salvador-Martinez-Port.git
 
-# 2. Entra en la carpeta
+# 2. Enter the folder
+// Entra en la carpeta
 cd Juan-Salvador-Martinez-Port
 
-# 3. Abre el archivo index.html en tu navegador favorito
-# Puedes hacer doble clic o usar una extensión como Live Server en VS Code
-📝 Nota: Este proyecto es estático y no necesita instalación de dependencias.
+# 3. Open the index.html file in your favorite browser
+// Abre el archivo index.html en tu navegador favorito
+# You can double-click or use an extension like Live Server in VS Code
+// Puedes hacer doble clic o usar una extensión como Live Server en VS Code
+```
+
+📝 **Note:** This is a static project and does not require any installation of dependencies.
+// 📝 **Nota:** Este es un proyecto estático y no requiere instalación de dependencias.
+
+---
+
+Thank you for visiting! 🙌
+// ¡Gracias por visitar! 
