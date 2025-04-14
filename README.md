@@ -2,7 +2,13 @@
 
 ¡Bienvenido a mi portafolio! Aquí podrás explorar una selección de proyectos que reflejan mi experiencia como **Desarrollador Frontend**.
 
-![Preview](https://juansalvadormc.github.io/Juan-Salvador-Martinez-Port/assets/img/preview.png)
+## 🔍 Preview del Portafolio
+
+<p align="center">
+  <img src="assets/previews/Captura_01.PNG" alt="Vista hero" width="800"/>
+  <img src="assets/previews/Captura_02.PNG" alt="Pantalla completa sin scroll" width="800"/>
+  <img src="assets/previews/Captura_03.PNG" alt="Extra preview" width="800"/>
+</p
 
 🌐 Ver online
 Puedes visitar la versión en línea de mi portafolio aquí:
