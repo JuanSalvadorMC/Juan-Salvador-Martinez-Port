@@ -1,6 +1,7 @@
 # 🚀 Juan Salvador Martínez - Web Portfolio
 
 Welcome to my portfolio! Here you can explore a selection of projects that reflect my experience as a **Frontend Developer**.
+
 // Bienvenido a mi portafolio! Aquí puedes explorar una selección de proyectos que reflejan mi experiencia como Desarrollador Frontend.
 
 ---
@@ -22,7 +23,6 @@ You can visit the online version of my portfolio here:
 ---
 
 ## 🛠️ Technologies Used
-// Tecnologías utilizadas
 
 - ⚙️ HTML5, CSS3, Vanilla JavaScript  // HTML5, CSS3, JavaScript puro
 - 🎨 Sass, Bootstrap                  // Sass, Bootstrap
@@ -53,6 +53,7 @@ You can visit the online version of my portfolio here:
 </p>
 
 The site is built with a responsive layout that adapts seamlessly to various screen sizes, ensuring a smooth experience on both desktop and mobile devices.
+
 // El sitio está construido con un diseño responsivo que se adapta perfectamente a varios tamaños de pantalla, asegurando una experiencia fluida tanto en escritorio como en móviles.
 
 <p align="center">
@@ -60,46 +61,47 @@ The site is built with a responsive layout that adapts seamlessly to various scr
 </p>
 
 ## 📱 Responsive Design
-// Diseño Responsivo
 
 <p align="center">
-  <img src="assets/previews/Captura_04.PNG" alt="Responsive view 1" width="400"/>
-  <img src="assets/previews/Captura_05.PNG" alt="Responsive view 2" width="400"/>
+  <img src="assets/previews/Captura_04.PNG" alt="Responsive view 1" width="200"/>
+  <img src="assets/previews/Captura_05.PNG" alt="Responsive view 2" width="200"/>
 </p>
 
 The portfolio is fully responsive. It adapts to different screen sizes including mobile phones, tablets, and desktop monitors.
+
 // El portafolio es completamente responsivo. Se adapta a diferentes tamaños de pantalla, incluidos teléfonos móviles, tabletas y monitores de escritorio.
 
 Built with modern CSS techniques like flexbox, media queries, and Bootstrap utilities.
+
 // Construido con técnicas modernas de CSS como flexbox, media queries y utilidades de Bootstrap.
 
 ---
 
 ## 🚀 How to Run the Project?
+
 // ¿Cómo ejecutar el proyecto?
 
 You can clone the project and view it locally by following these steps:
+
 // Puedes clonar el proyecto y visualizarlo localmente siguiendo estos pasos:
 
 ```bash
-# 1. Clone the repository
-// Clona el repositorio
+# 1. Clone the repository  // Clona el repositorio
 git clone https://github.com/juanmartinezcervantes/Juan-Salvador-Martinez-Port.git
 
-# 2. Enter the folder
-// Entra en la carpeta
+# 2. Enter the folder   // Entra en la carpeta
 cd Juan-Salvador-Martinez-Port
 
-# 3. Open the index.html file in your favorite browser
-// Abre el archivo index.html en tu navegador favorito
-# You can double-click or use an extension like Live Server in VS Code
-// Puedes hacer doble clic o usar una extensión como Live Server en VS Code
+# 3. Open the index.html file in your favorite browser  // Haz doble clic en el archivo index.html se abrira en tu navegador favorito
+# You can double-click or use an extension like Live Server in VS Code  // Puedes hacer doble clic o usar una extensión como Live Server en VS Code
 ```
 
 📝 **Note:** This is a static project and does not require any installation of dependencies.
-// 📝 **Nota:** Este es un proyecto estático y no requiere instalación de dependencias.
+
+// Nota: Este es un proyecto estático y no requiere instalación de dependencias.
 
 ---
 
 Thank you for visiting! 🙌
+
 // ¡Gracias por visitar! 
